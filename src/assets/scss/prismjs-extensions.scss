@@ -1,0 +1,32 @@
+.gatsby-highlight-code-line {
+  background-color: rgba(black, 0.26);
+  display: block;
+  margin-right: -1em !important;
+  margin-left: -1em !important;
+  padding-right: 1em !important;
+  padding-left: 0.75em !important;
+  border-left: 0.25em solid #f99;
+
+  // :: fixes code highlighting scrolling
+  max-width: unset !important;
+}
+
+.gatsby-highlight {
+  background-color: #3f3f3f;
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+
+  & pre[class*='language-'],
+  & code[class*='language-'] {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    overflow: initial;
+    float: left; /* 1 */
+    min-width: 100%; /* 2 */
+
+    max-width: unset !important;
+  }
+}

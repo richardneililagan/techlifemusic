@@ -2,7 +2,7 @@
 @import '../../../assets/scss/mixins';
 
 .tags {
-  @include margin-bottom(.5);
+  @include margin-bottom(0.5);
 
   &__list {
     list-style: none;
@@ -20,18 +20,21 @@
         line-height: $button-height;
         border: 1px solid $color-gray-border;
         text-decoration: none;
-        border-radius: $button-border-radius;
-        color: $color-base;
+        // border-radius: $button-border-radius;
+        border-radius: 4px;
+        color: $color-gray;
+
+        box-shadow: 0 0 0 0 $color-secondary;
+
+        transition: all 0.2s ease;
 
         &:hover,
         &:focus {
-          color: $color-primary;
+          color: $color-secondary;
+          border-color: $color-secondary;
+          box-shadow: 2px 2px 0 0 $color-secondary;
         }
-
       }
-
     }
-
   }
-
 }

@@ -1,0 +1,392 @@
+// @import url('https://fonts.googleapis.com/css?family=Fira + Mono');
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+/**
+* xonokai theme for JavaScript, CSS and HTML
+* based on: https://github.com/MoOx/sass-prism-theme-base by Maxime Thirouin ~ MoOx --> http://moox.fr/ , which is Loosely based on Monokai textmate theme by http://www.monokai.nl/
+* license: MIT; http://moox.mit-license.org/
+*/
+code[class*='language-'],
+pre[class*='language-'] {
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: normal;
+  font-family: 'Fira Code', Menlo, Monaco, 'Courier New', monospace;
+  font-size: 14px;
+  color: #76d9e6;
+  text-shadow: none;
+  line-height: 1.5;
+
+  @media (min-width: 960px) {
+    max-width: 50rem !important;
+  }
+}
+
+pre > code[class*='language-'] {
+  font-size: 1em;
+}
+
+pre[class*='language-'],
+:not(pre) > code[class*='language-'] {
+  background: #2a2a2a;
+}
+
+pre[class*='language-'] {
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #e1e1e8;
+  overflow: auto;
+  position: relative;
+}
+
+pre[class*='language-'] code {
+  white-space: pre;
+  display: block;
+}
+
+:not(pre) > code[class*='language-'] {
+  padding: 0.15em 0.2em 0.05em;
+  border-radius: 0.3em;
+  border: 0.13em solid #7a6652;
+  box-shadow: 1px 1px 0.3em -0.1em #000 inset;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6f705e;
+}
+
+.token.operator,
+.token.boolean,
+.token.number {
+  color: #a77afe;
+}
+
+.token.attr-name,
+.token.string {
+  color: #e6d06c;
+}
+
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #e6d06c;
+}
+
+.token.selector,
+.token.inserted {
+  color: #a6e22d;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.important,
+.token.deleted {
+  color: #ef3b7d;
+}
+
+.token.regex,
+.token.statement {
+  color: #76d9e6;
+}
+
+.token.placeholder,
+.token.variable {
+  color: #fff;
+}
+
+.token.important,
+.token.statement,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.punctuation {
+  color: #bebec5;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+code.language-markup {
+  color: #f9f9f9;
+}
+
+code.language-markup .token.tag {
+  color: #ef3b7d;
+}
+
+code.language-markup .token.attr-name {
+  color: #a6e22d;
+}
+
+code.language-markup .token.attr-value {
+  color: #e6d06c;
+}
+
+code.language-markup .token.style,
+code.language-markup .token.script {
+  color: #76d9e6;
+}
+
+code.language-markup .token.script .token.keyword {
+  color: #76d9e6;
+}
+
+/* Line highlight plugin */
+pre[class*='language-'][data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin-top: 1em;
+  background: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before,
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: 0.4em;
+  left: 0.6em;
+  min-width: 1em;
+  padding: 0.2em 0.5em;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+  font: bold 65%/1 sans-serif;
+  height: 1em;
+  line-height: 1em;
+  text-align: center;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: 0.4em;
+}
+
+// /*
+//  * Hopscotch
+//  * by Jan T. Sott
+//  * https://github.com/idleberg/Hopscotch
+//  *
+//  * This work is licensed under the Creative Commons CC0 1.0 Universal License
+//  */
+
+// code[class*='language-'],
+// pre[class*='language-'] {
+//   font-family: 'Fira Code', 'Fira Mono', Menlo, Monaco, 'Lucida Console',
+//     'Courier New', Courier, monospace;
+//   font-size: 14px;
+//   line-height: 1.5;
+//   direction: ltr;
+//   text-align: left;
+//   word-spacing: normal;
+
+//   -moz-tab-size: 4;
+//   -o-tab-size: 4;
+//   tab-size: 2;
+
+//   -webkit-hyphens: none;
+//   -moz-hyphens: none;
+//   -ms-hyphens: none;
+//   hyphens: none;
+//   white-space: pre;
+//   // white-space: pre-wrap;
+//   word-break: break-all;
+//   // word-wrap: break-word;
+//   background: #322931;
+//   color: #b9b5b8;
+// }
+
+// pre > code[class*='language-'] {
+//   font-size: 1em;
+// }
+
+// /* Code blocks */
+// pre[class*='language-'] {
+//   padding: 1em;
+//   margin: 0.5em 0;
+//   overflow: auto;
+// }
+
+// /* Inline code */
+// :not(pre) > code[class*='language-'] {
+//   padding: 0.1em;
+//   border-radius: 0.3em;
+// }
+
+// .token.comment,
+// .token.prolog,
+// .token.doctype,
+// .token.cdata {
+//   color: #797379;
+// }
+
+// .token.punctuation {
+//   color: #b9b5b8;
+// }
+
+// .namespace {
+//   opacity: 0.7;
+// }
+
+// .token.null,
+// .token.operator,
+// .token.boolean,
+// .token.number {
+//   color: #fd8b19;
+// }
+
+// .token.property {
+//   color: #fdcc59;
+// }
+
+// .token.tag {
+//   color: #1290bf;
+// }
+
+// .token.string {
+//   color: #149b93;
+// }
+
+// .token.selector {
+//   color: #c85e7c;
+// }
+
+// .token.attr-name {
+//   color: #fd8b19;
+// }
+
+// .token.entity,
+// .token.url,
+// .language-css .token.string,
+// .style .token.string {
+//   color: #149b93;
+// }
+
+// .token.attr-value,
+// .token.keyword,
+// .token.control,
+// .token.directive,
+// .token.unit {
+//   color: #8fc13e;
+// }
+
+// .token.statement,
+// .token.regex,
+// .token.atrule {
+//   color: #149b93;
+// }
+
+// .token.placeholder,
+// .token.variable {
+//   color: #1290bf;
+// }
+
+// .token.important {
+//   color: #dd464c;
+//   font-weight: bold;
+// }
+
+// .token.entity {
+//   cursor: help;
+// }
+
+// pre > code.highlight {
+//   outline: 0.4em solid red;
+//   outline-offset: 0.4em;
+// }
+
+// :: https://github.com/chasm/gatsby-remark-prismjs#optional-add-line-highlighting-styles
+// .gatsby-highlight-code-line {
+//   display: block;
+//   background: rgba(black, 0.26);
+//   margin-right: -1em !important;
+//   margin-left: -1em !important;
+//   padding-right: -1em;
+//   padding-left: 0.75em;
+
+//   border-left: 0.25em solid #ff9900;
+// }
+
+// .gatsby-highlight {
+//   background-color: #322931;
+//   // border-radius: 0.3em;
+//   margin: 0.5em 0;
+//   margin: 0;
+//   padding: 1em;
+//   overflow: auto;
+// }
+
+// .gatsby-highlight pre[class*='language-'] {
+//   background-color: transparent;
+//   margin: 0;
+//   padding: 0;
+//   overflow: initial;
+//   float: left; /* 1 */
+//   min-width: 100%; /* 2 */
+// }
+
+// :: ---
+
+.gatsby-highlight {
+  @media (min-width: 960px) {
+    max-width: 50rem !important;
+
+    & pre[class*='language-'] {
+      min-width: 100%;
+    }
+
+    & pre code > * {
+      max-width: 100% !important;
+    }
+  }
+}
+
+.gatsby-highlight-code-line {
+  background-color: rgba(black, 0.12);
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.2em solid $color-primary;
+}
+
+.gatsby-highlight pre[class*='language-'] {
+  float: left;
+  min-width: 100%;
+}
