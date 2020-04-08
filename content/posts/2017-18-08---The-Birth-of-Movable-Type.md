@@ -1,5 +1,6 @@
 ---
 title: 'Johannes Gutenberg: The Birth of Movable Type'
+subtitle: 'Dapat bang diligan ng suka ang natutuyong lumpia?'
 date: '2017-08-18T22:12:03.284Z'
 template: 'post'
 draft: false

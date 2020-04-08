@@ -10,7 +10,7 @@ type Props = {
   children: ReactNode,
   title: string,
   description?: string,
-  socialImage?: string,
+  socialImage?: string
 }
 
 const Layout = ({ children, title, description, socialImage }: Props) => {
@@ -24,7 +24,7 @@ const Layout = ({ children, title, description, socialImage }: Props) => {
         <html lang='en' />
         <title>{title}</title>
         <link
-          href='https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap'
+          href='https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@300;400;700&display=swap'
           rel='stylesheet'
         />
         <meta name='description' content={description} />
