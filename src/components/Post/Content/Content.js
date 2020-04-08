@@ -13,7 +13,7 @@ type Props = {
 const Heading = ({ title, subtitle }: Pick<Props, 'title' | 'subtitle'>) => (
   <header>
     <h1 className={styles['content__title']}>{title}</h1>
-    {!!subtitle && <h2 className={styles['content__subtitle']}>{subtitle}</h2>}
+    {!!subtitle && <p className={styles['content__subtitle']}>{subtitle}</p>}
   </header>
 )
 
