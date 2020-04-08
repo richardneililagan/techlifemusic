@@ -28,15 +28,19 @@
     font-weight: normal;
     margin-left: auto;
     margin-right: auto;
+
+    transition: color 0.2s linear, border-color 0.2s linear,
+      box-shadow 0.2s linear;
+
     @include margin-top(1);
 
     &:hover,
     &:focus {
       color: $color-primary;
+      border-color: $color-primary;
+      box-shadow: 2px 2px 0 0 $color-primary;
     }
-
   }
-
 }
 
 @include breakpoint-md {
@@ -54,9 +58,7 @@
       max-width: auto;
       margin: 0;
       top: 30px;
-      left: 30px
+      left: 30px;
     }
-
   }
-
 }

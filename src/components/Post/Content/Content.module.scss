@@ -52,8 +52,22 @@
       }
     }
 
+    & p {
+      font-family: Lato, sans-serif;
+
+      & strong {
+        font-weight: 700;
+      }
+    }
+
     & a {
-      text-decoration: underline;
+      text-decoration: none;
+
+      &:hover,
+      &:active,
+      &:focus {
+        border-bottom: 1px solid $color-secondary;
+      }
     }
 
     & * {
@@ -85,17 +99,39 @@
       }
     }
 
+    // :: image captions ---
     & img ~ em {
-      margin-top: 0;
+      margin-top: 0.2rem;
       font-size: 0.875rem;
+      font-family: $typographic-font-family;
       line-height: 1.21rem;
-      display: inline-block;
+      display: block;
       width: 100%;
       text-align: center;
     }
 
     & img + em {
       margin-top: 0.4rem;
+    }
+
+    // :: inline highlights ---
+    & mark {
+      background-color: unset;
+      background-color: lighten($color-primary, 16%);
+      padding-right: 0.3em;
+      padding-left: 0.3em;
+      transition: background-color 0.3s linear;
+
+      &:hover {
+        background-color: lighten($color-primary, 10%);
+      }
+    }
+
+    // :: quotations ---
+    & blockquote {
+      & cite {
+        color: $color-secondary;
+      }
     }
   }
 }
