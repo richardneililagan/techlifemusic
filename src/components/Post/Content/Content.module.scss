@@ -51,6 +51,51 @@
     & img {
       max-width: 100%;
     }
+
+    // :: code blocks ---
+    & div[data-language] {
+      margin: 0.5em -1em;
+      padding: 1em;
+      overflow: auto;
+      max-width: unset;
+
+      & pre[class*='language-'],
+      & code[class*='language-'] {
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        overflow: initial;
+        float: left;
+        min-width: 100%;
+        max-width: unset;
+      }
+    }
+
+    & img ~ em {
+      margin-top: 0;
+      font-size: 0.875rem;
+      line-height: 1.21rem;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+
+    & img + em {
+      margin-top: 0.4rem;
+    }
+  }
+}
+
+@include breakpoint-sm {
+  .content {
+    &__body {
+      & figure[class~='fluid'] {
+        width: 100vw;
+        max-width: unset;
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+    }
   }
 }
 
@@ -74,6 +119,18 @@
         font-size: $typographic-base-font-size * 1.125;
         @include line-height(1.125);
         @include margin-bottom(1.125);
+      }
+
+      & div[data-language] {
+        max-width: $layout-width;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      & figure[class~='fluid'] {
+        margin-right: unset;
+        margin-left: unset;
+        max-width: 945px;
       }
     }
   }

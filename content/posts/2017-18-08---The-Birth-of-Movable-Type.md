@@ -1,16 +1,16 @@
 ---
-title: "Johannes Gutenberg: The Birth of Movable Type"
-date: "2017-08-18T22:12:03.284Z"
-template: "post"
+title: 'Johannes Gutenberg: The Birth of Movable Type'
+date: '2017-08-18T22:12:03.284Z'
+template: 'post'
 draft: false
-slug: "the-birth-of-movable-type"
-category: "Typography"
+slug: 'the-birth-of-movable-type'
+category: 'Typography'
 tags:
-  - "Open source"
-  - "Gatsby"
-  - "Typography"
-description: "German inventor Johannes Gutenberg developed a method of movable type and used it to create one of the western world’s first major printed books, the “Forty–Two–Line” Bible."
-socialImage: "/media/gutenberg.jpg"
+  - 'Open source'
+  - 'Gatsby'
+  - 'Typography'
+description: 'German inventor Johannes Gutenberg developed a method of movable type and used it to create one of the western world’s first major printed books, the “Forty–Two–Line” Bible.'
+socialImage: '/media/gutenberg.jpg'
 ---
 
 German inventor Johannes Gutenberg developed a method of movable type and used it to create one of the western world’s first major printed books, the “Forty–Two–Line” Bible.
@@ -70,7 +70,7 @@ In 1462, during a conflict between two archbishops, Mainz was sacked by archbish
 
 In January 1465, Gutenberg's achievements were recognized and he was given the title Hofmann (gentleman of the court) by von Nassau. This honor included a stipend, an annual court outfit, as well as 2,180 litres of grain and 2,000 litres of wine tax-free. It is believed he may have moved back to Mainz around this time, but this is not certain.
 
-***
+---
 
 Gutenberg died in 1468 and was buried in the Franciscan church at Mainz, his contributions largely unknown. This church and the cemetery were later destroyed, and Gutenberg's grave is now lost.
 
@@ -81,8 +81,13 @@ In 1504, he was mentioned as the inventor of typography in a book by Professor I
 Gutenberg's early printing process, and what tests he may have made with movable type, are not known in great detail. His later Bibles were printed in such a way as to have required large quantities of type, some estimates suggesting as many as 100,000 individual sorts. Setting each page would take, perhaps, half a day, and considering all the work in loading the press, inking the type, pulling the impressions, hanging up the sheets, distributing the type, etc., it is thought that the Gutenberg–Fust shop might have employed as many as 25 craftsmen.
 
 ![Movable metal type, and composing stick, descended from Gutenberg's press. Photo by Willi Heidelbach. Licensed under CC BY 2.5](/media/movable-type.jpg)
+_Movable metal type, and composing stick, descended from Gutenberg's press._
+_Photo by Willi Heidelbach. Licensed under CC BY 2.5_
 
-*Movable metal type, and composing stick, descended from Gutenberg's press. Photo by Willi Heidelbach. Licensed under CC BY 2.5*
+<figure class='fluid'> 
+	<img src="/media/movable-type.jpg" alt="Gutenberg">
+	<figcaption>Johannes Gutenberg</figcaption>
+</figure>
 
 Gutenberg's technique of making movable type remains unclear. In the following decades, punches and copper matrices became standardized in the rapidly disseminating printing presses across Europe. Whether Gutenberg used this sophisticated technique or a somewhat primitive version has been the subject of considerable debate.
 
