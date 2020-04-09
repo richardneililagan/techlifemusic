@@ -14,11 +14,16 @@ const Copyright = ({ copyright }: Props) => (
       <a
         href='https://github.com/alxshelepenok/gatsby-starter-lumen'
         rel='noopener noreferrer'
+        target='_blank'
       >
         Lumen
       </a>{' '}
       by&nbsp;
-      <a href='https://github.com/alxshelepenok' rel='noopener noreferrer'>
+      <a
+        href='https://github.com/alxshelepenok'
+        rel='noopener noreferrer'
+        target='_blank'
+      >
         Alexander Shelepenok
       </a>
       . Powered by&nbsp;
@@ -29,6 +34,7 @@ const Copyright = ({ copyright }: Props) => (
       <a
         href='https://aws.amazon.com/amplify/console'
         rel='noopener noreferrer'
+        target='_blank'
       >
         AWS Amplify
       </a>
