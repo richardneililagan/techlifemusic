@@ -18,6 +18,7 @@
         color: $typographic-base-font-color;
         font-weight: normal;
         border: 0;
+        position: relative;
 
         &:hover,
         &:focus {
@@ -26,14 +27,20 @@
         }
 
         &--active {
-          color: $color-base;
-          border-bottom: 1px solid $color-base;
+          color: $color-primary;
+
+          &::before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: -1em;
+            top: 0.5em;
+            background-color: $color-primary;
+            width: 0.4em;
+            height: 0.4em;
+          }
         }
-
       }
-
     }
-
   }
-
 }
