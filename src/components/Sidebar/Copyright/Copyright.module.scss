@@ -5,3 +5,9 @@
   color: lighten($color-gray, 18%);
   font-size: $typographic-small-font-size;
 }
+
+.attribution {
+  color: lighten($color-gray, 18%);
+  font-size: $typographic-small-font-size * 0.9;
+  line-height: 1.4;
+}
