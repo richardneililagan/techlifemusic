@@ -91,7 +91,7 @@ Gutenberg's early printing process, and what tests he may have made with movable
 
 ![Movable metal type, and composing stick, descended from Gutenberg's press. Photo by Willi Heidelbach. Licensed under CC BY 2.5](/media/movable-type.jpg)
 _Movable metal type, and composing stick, descended from Gutenberg's press._
-_Photo by Willi Heidelbach. Licensed under CC BY 2.5_
+<cite>Photo by Willi Heidelbach. Licensed under CC BY 2.5</cite>
 
 <figure class='fluid'> 
 	<img src="/media/movable-type.jpg" alt="Gutenberg">

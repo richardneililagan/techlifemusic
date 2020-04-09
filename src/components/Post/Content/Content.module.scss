@@ -100,7 +100,8 @@
     }
 
     // :: image captions ---
-    & img ~ em {
+    & img ~ em,
+    & img ~ cite {
       margin-top: 0.2rem;
       font-size: 0.875rem;
       font-family: $typographic-font-family;
@@ -108,6 +109,10 @@
       display: block;
       width: 100%;
       text-align: center;
+    }
+
+    & img ~ cite {
+      color: lighten($color-gray, 18%);
     }
 
     & img + em {
