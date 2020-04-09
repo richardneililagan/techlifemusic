@@ -12,15 +12,15 @@ module.exports = {
   useKatex: true,
   menu: [
     {
-      label: 'Articles',
+      label: 'Blog',
       path: '/'
     },
     {
-      label: 'About me',
+      label: 'About',
       path: '/pages/about'
     },
     {
-      label: 'Contact me',
+      label: 'Contact',
       path: '/pages/contacts'
     }
   ],
@@ -30,19 +30,19 @@ module.exports = {
     bio:
       "I'm (mostly) a front-end engineer, but I like to dabble with whatever technologies I can get my hands on.",
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: '705310+richardneililagan@users.noreply.github.com',
+      facebook: '',
+      telegram: '',
+      twitter: 'techlifemusic',
+      github: 'richardneililagan',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'richardneililagan',
+      instagram: 'tech.life.music',
       line: '',
       gitlab: '',
       weibo: '',
-      codepen: '',
+      codepen: 'richardneililagan',
       youtube: '',
       soundcloud: ''
     }

@@ -3,3 +3,7 @@
 @import 'variables';
 @import 'mixins';
 @import 'base';
+
+html {
+  border-bottom: 8px solid $color-primary;
+}
