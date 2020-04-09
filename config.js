@@ -9,20 +9,20 @@ module.exports = {
   disqusShortname: '',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-00000000-0',
-  useKatex: false,
+  useKatex: true,
   menu: [
     {
       label: 'Articles',
-      path: '/',
+      path: '/'
     },
     {
       label: 'About me',
-      path: '/pages/about',
+      path: '/pages/about'
     },
     {
       label: 'Contact me',
-      path: '/pages/contacts',
-    },
+      path: '/pages/contacts'
+    }
   ],
   author: {
     name: 'Richard Neil Ilagan',
@@ -44,7 +44,7 @@ module.exports = {
       weibo: '',
       codepen: '',
       youtube: '',
-      soundcloud: '',
-    },
-  },
+      soundcloud: ''
+    }
+  }
 }
