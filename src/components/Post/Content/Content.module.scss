@@ -80,6 +80,16 @@
       max-width: 100%;
     }
 
+    // :: table of contents ---
+
+    & > ul:first-child {
+      color: $color-secondary;
+      padding-top: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid $color-gray-bg;
+      border-top: 1px solid $color-gray-bg;
+    }
+
     // :: code blocks ---
     & div[data-language] {
       margin: 0.5em -1em;
