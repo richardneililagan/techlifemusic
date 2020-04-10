@@ -18,8 +18,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content`,
+        path: `${__dirname}/content/pages`,
         name: 'pages'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/posts`,
+        name: 'posts'
       }
     },
     {
@@ -100,9 +107,13 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: 'gatsby-plugin-mdx',
       options: {
-        plugins: [
+        extensions: ['.mdx', '.md'],
+        defaultLayouts: {
+          default: require.resolve('./src/components/Layout/Layout.js')
+        },
+        gatsbyRemarkPlugins: [
           'gatsby-remark-relative-images',
           {
             resolve: 'gatsby-remark-katex',

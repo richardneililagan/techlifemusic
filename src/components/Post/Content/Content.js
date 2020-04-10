@@ -1,5 +1,6 @@
 // @flow strict
 import React from 'react'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import moment from 'moment'
 import styles from './Content.module.scss'
 
@@ -20,10 +21,11 @@ const Heading = ({ title, subtitle }: Pick<Props, 'title' | 'subtitle'>) => (
 const Content = ({ body, title, subtitle, date }: Props) => (
   <article className={styles['content']}>
     <Heading title={title} subtitle={subtitle} />
-    <div
+    <MDXRenderer>{body}</MDXRenderer>
+    {/* <div
       className={styles['content__body']}
       dangerouslySetInnerHTML={{ __html: body }}
-    />
+    /> */}
   </article>
 )
 

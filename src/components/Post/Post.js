@@ -14,7 +14,7 @@ type Props = {
 }
 
 const Post = ({ post }: Props) => {
-  const { html } = post
+  const { body } = post
   const { tagSlugs, slug } = post.fields
   const { tags, title, subtitle, date } = post.frontmatter
 
@@ -25,7 +25,7 @@ const Post = ({ post }: Props) => {
       </Link>
 
       <div className={styles['post__content']}>
-        <Content body={html} title={title} date={date} subtitle={subtitle} />
+        <Content body={body} title={title} date={date} subtitle={subtitle} />
       </div>
 
       <div className={styles['post__footer']}>

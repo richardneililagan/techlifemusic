@@ -11,7 +11,7 @@ import type { PageContext, AllMarkdownRemark } from '../types'
 
 type Props = {
   data: AllMarkdownRemark,
-  pageContext: PageContext,
+  pageContext: PageContext
 }
 
 const IndexTemplate = ({ data, pageContext }: Props) => {
@@ -22,10 +22,10 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
     hasNextPage,
     hasPrevPage,
     prevPagePath,
-    nextPagePath,
+    nextPagePath
   } = pageContext
 
-  const { edges } = data.allMarkdownRemark
+  const { edges } = data.allMdx
   const pageTitle =
     currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle
 
@@ -47,7 +47,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
 
 export const query = graphql`
   query IndexTemplate($postsLimit: Int!, $postsOffset: Int!) {
-    allMarkdownRemark(
+    allMdx(
       limit: $postsLimit
       skip: $postsOffset
       filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
