@@ -26,7 +26,7 @@ const TagTemplate = ({ data, pageContext }: Props) => {
     hasNextPage
   } = pageContext
 
-  const { edges } = data.allMarkdownRemark
+  const { edges } = data.allMdx
   const pageTitle =
     currentPage > 0
       ? `All Posts tagged as "${tag}" - Page ${currentPage} - ${siteTitle}`

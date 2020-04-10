@@ -22,13 +22,6 @@ module.exports = {
         name: 'pages'
       }
     },
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     path: `${__dirname}/content/posts`,
-    //     name: 'posts'
-    //   }
-    // },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -51,7 +44,7 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-feed',
+      resolve: 'gatsby-plugin-feed-mdx',
       options: {
         query: `
           {
@@ -66,8 +59,8 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) =>
-              allMarkdownRemark.edges.map(edge => ({
+            serialize: ({ query: { site, allMdx } }) =>
+              allMdx.edges.map(edge => ({
                 ...edge.node.frontmatter,
                 description: edge.node.frontmatter.description,
                 date: edge.node.frontmatter.date,
@@ -77,7 +70,7 @@ module.exports = {
               })),
             query: `
               {
-                allMarkdownRemark(
+                allMdx(
                   limit: 1000,
                   sort: { order: DESC, fields: [frontmatter___date] },
                   filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
@@ -112,6 +105,9 @@ module.exports = {
         extensions: ['.mdx', '.md'],
         defaultLayouts: {
           default: require.resolve('./src/components/Layout/Layout.js')
+          // default: require.resolve(
+          //   './src/components/DefaultLayout/DefaultLayout.js'
+          // )
         },
         gatsbyRemarkPlugins: [
           'gatsby-remark-relative-images',

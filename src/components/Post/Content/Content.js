@@ -22,10 +22,6 @@ const Content = ({ body, title, subtitle, date }: Props) => (
   <article className={styles['content']}>
     <Heading title={title} subtitle={subtitle} />
     <MDXRenderer>{body}</MDXRenderer>
-    {/* <div
-      className={styles['content__body']}
-      dangerouslySetInnerHTML={{ __html: body }}
-    /> */}
   </article>
 )
 

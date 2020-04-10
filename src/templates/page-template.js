@@ -34,7 +34,6 @@ const PageTemplate = ({ data }: Props) => {
     >
       <Sidebar />
       <Page title={pageTitle}>
-        {/* <div dangerouslySetInnerHTML={{ __html: pageBody }} /> */}
         <MDXRenderer>{pageBody}</MDXRenderer>
       </Page>
     </Layout>

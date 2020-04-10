@@ -10,6 +10,7 @@ const onRenderBody = ({ setHeadComponents }) => {
   const { useKatex } = siteConfig
 
   if (useKatex) {
+    // :: TODO figure out an alternative to `dangerouslySetInnerHTML`
     setHeadComponents([
       React.createElement('style', {
         key: 'katex-inline-stylesheet',
