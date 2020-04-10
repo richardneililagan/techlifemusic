@@ -41,6 +41,7 @@
     "@mdx-js/react": "1.5.8",
     "bluebird": "^3.7.2",
     "classnames": "^2.2.6",
+    "clsx": "1.1.0",
     "codecov": "^3.6.5",
     "gatsby": "^2.20.8",
     "gatsby-link": "^2.3.1",

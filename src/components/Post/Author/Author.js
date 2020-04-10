@@ -12,7 +12,7 @@ const Author = () => {
       <header>{author.name}</header>
       <p className={styles['author__bio']}>
         {author.bio}
-        <div>
+        <span>
           <a
             className={styles['author__bio-twitter']}
             href={getContactHref('twitter', author.contacts.twitter)}
@@ -39,7 +39,7 @@ const Author = () => {
           >
             LinkedIn
           </a>
-        </div>
+        </span>
       </p>
     </cite>
   )

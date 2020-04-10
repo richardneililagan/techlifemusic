@@ -2,9 +2,14 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { withPrefix } from 'gatsby'
+import { MDXProvider } from '@mdx-js/react'
 import type { Node as ReactNode } from 'react'
 import { useSiteMetadata } from '../../hooks'
 import styles from './Layout.module.scss'
+
+import components from '../Widgets'
+
+// :: ---
 
 type Props = {
   children: ReactNode,
@@ -35,7 +40,7 @@ const Layout = ({ children, title, description, socialImage }: Props) => {
         <meta name='twitter:description' content={description} />
         <meta name='twitter:image' content={metaImageUrl} />
       </Helmet>
-      {children}
+      <MDXProvider components={components}>{children}</MDXProvider>
     </div>
   )
 }

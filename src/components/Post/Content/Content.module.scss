@@ -60,6 +60,36 @@
       }
     }
 
+    & {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        a[class~='anchor'] {
+          opacity: 0;
+          &:hover,
+          &:active,
+          &:focus {
+            border-bottom: none;
+
+            & path {
+              fill: $color-primary;
+            }
+          }
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          a[class~='anchor'] {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
     & a {
       text-decoration: none;
 
@@ -121,8 +151,10 @@
       text-align: center;
     }
 
-    & img ~ cite {
+    & img ~ cite,
+    & img ~ figcaption cite {
       color: lighten($color-gray, 18%);
+      display: block;
     }
 
     & img + em {

@@ -16,6 +16,10 @@
   }
 
   &__bio {
+    & > span {
+      display: block;
+    }
+
     &-twitter,
     &-github,
     &-linkedin {
