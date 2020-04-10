@@ -8,7 +8,7 @@ module.exports = {
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-00000000-0',
+  googleAnalyticsId: 'UA-10342511-3',
   useKatex: true,
   menu: [
     {
