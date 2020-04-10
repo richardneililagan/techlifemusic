@@ -16,8 +16,8 @@ type Props = {
 
 const PageTemplate = ({ data }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata()
-  const { body: pageBody } = data.markdownRemark
-  const { frontmatter } = data.markdownRemark
+  const { body: pageBody } = data.mdx
+  const { frontmatter } = data.mdx
   const {
     title: pageTitle,
     description: pageDescription,
