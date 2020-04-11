@@ -1,13 +1,28 @@
 ---
-title: "About me"
-template: "page"
-socialImage: "/media/image-2.jpg"
+title: 'A little bit about myself.'
+template: 'page'
+socialImage: '/media/image-2.jpg'
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+<em>
+I'm a Filipino software developer with a particular penchant for frontend web development,
+specializing in architecture design for the cloud, containers, and serverless technologies. Based in Singapore.
+</em>
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
+I'm currently a <strong>Prototyping Architect</strong> for <a href='https://aws.amazon.com' rel='noreferrer noopener' target='_blank'>Amazon Web Services (AWS)</a> in ASEAN. Over the past 15 years, I've led software development projects for enterprises, startups, and government agencies in Australia, New Zealand, Japan, Canada, the USA, and the Philippines.
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+I really enjoy speaking for conferences, community meetups, universities, and workshops.
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+When I'm not [building or studying something new][1], I'm most probably either [doing hobbyist photography][2], [playing tabletop or video games][3], or picking apart a movie or TV show.
+
+## Let's be friends.
+
+Hit me up on my [LinkedIn][4] or on [Twitter][5] if you've got an inquiry, a hankering for a chat, or just wanna say hello.
+
+If you're around in Singapore or the Philippines, I'm pretty much always game for a good coffee or bubble tea.
+
+[1]: https://github.com/richardneililagan
+[2]: https://instagram.com/tech.life.music
+[3]: https://twitch.tv/cardingggg
+[4]: https://linkedin.com/in/richardneililagan
+[5]: https://twitter.com/techlifemusic
