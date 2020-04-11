@@ -18,10 +18,6 @@ module.exports = {
     {
       label: 'About',
       path: '/pages/about'
-    },
-    {
-      label: 'Contact',
-      path: '/pages/contacts'
     }
   ],
   author: {
@@ -30,7 +26,7 @@ module.exports = {
     bio:
       "I'm (mostly) a front-end engineer, but I like to dabble with whatever technologies I can get my hands on.",
     contacts: {
-      email: '705310+richardneililagan@users.noreply.github.com',
+      email: 'me@richardneililagan.com',
       facebook: '',
       telegram: '',
       twitter: 'techlifemusic',
