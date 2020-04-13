@@ -21,7 +21,7 @@
   &__subtitle {
     font-family: $typographic-secondary-font-family;
     font-size: $typographic-base-font-size * 1.6;
-    font-weight: 400;
+    font-weight: normal;
     color: $color-gray;
     max-width: $layout-post-width;
     margin-left: auto;
@@ -33,6 +33,36 @@
   }
 
   &__body {
+    & p {
+      font-family: $typographic-secondary-font-family;
+
+      & strong {
+        font-weight: bold;
+      }
+    }
+
+    // :: quotations ---
+    & blockquote {
+      font-style: italic;
+      text-align: center;
+      margin-top: 0;
+      @include padding(1, 0);
+
+      & p {
+        max-width: $layout-post-width;
+        font-size: $typographic-base-font-size * 1.6817;
+        margin-top: 0;
+        @include margin-bottom(1);
+        @include line-height(1.5);
+      }
+
+      & cite {
+        color: $color-secondary;
+        font-family: $typographic-font-family;
+        font-size: 18px;
+      }
+    }
+
     & figure {
       @include margin-bottom(1);
 
@@ -52,40 +82,30 @@
       }
     }
 
-    & p {
-      font-family: $typographic-secondary-font-family;
-
-      & strong {
-        font-weight: 700;
-      }
-    }
-
-    & {
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        a[class~='anchor'] {
-          opacity: 0;
-          &:hover,
-          &:active,
-          &:focus {
-            border-bottom: none;
-
-            & path {
-              fill: $color-primary;
-            }
-          }
-        }
-
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      a[class~='anchor'] {
+        opacity: 0;
         &:hover,
         &:active,
         &:focus {
-          a[class~='anchor'] {
-            opacity: 1;
+          border-bottom: none;
+
+          & path {
+            fill: $color-primary;
           }
+        }
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        a[class~='anchor'] {
+          opacity: 1;
         }
       }
     }
@@ -171,30 +191,6 @@
 
       &:hover {
         background-color: lighten($color-primary, 10%);
-      }
-    }
-
-    // :: quotations ---
-    & blockquote {
-      & cite {
-        color: $color-secondary;
-        font-family: $typographic-font-family;
-        font-size: 18px;
-      }
-    }
-
-    & blockquote {
-      font-style: italic;
-      text-align: center;
-      margin-top: 0;
-      @include padding(1, 0);
-
-      & p {
-        max-width: $layout-post-width;
-        font-size: $typographic-base-font-size * 1.6817;
-        margin-top: 0;
-        @include margin-bottom(1);
-        @include line-height(1.5);
       }
     }
   }

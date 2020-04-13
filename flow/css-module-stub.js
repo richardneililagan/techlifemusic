@@ -3,6 +3,6 @@ type CSSModule = {
   [key: string]: string,
 };
 
-const emptyCSSModule: CSSModule = {};
+const emptyCSSModule: CSSModule = {}
 
-export default emptyCSSModule;
+export default emptyCSSModule

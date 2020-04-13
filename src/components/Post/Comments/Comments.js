@@ -1,7 +1,7 @@
 // @flow strict
-import React from 'react';
-import ReactDisqusComments from 'react-disqus-comments';
-import { useSiteMetadata } from '../../../hooks';
+import React from 'react'
+import ReactDisqusComments from 'react-disqus-comments'
+import { useSiteMetadata } from '../../../hooks'
 
 type Props = {
   postTitle: string,
@@ -9,10 +9,10 @@ type Props = {
 };
 
 const Comments = ({ postTitle, postSlug }: Props) => {
-  const { url, disqusShortname } = useSiteMetadata();
+  const { url, disqusShortname } = useSiteMetadata()
 
   if (!disqusShortname) {
-    return null;
+    return null
   }
 
   return (
@@ -22,7 +22,7 @@ const Comments = ({ postTitle, postSlug }: Props) => {
       title={postTitle}
       url={url + postSlug}
     />
-  );
-};
+  )
+}
 
-export default Comments;
+export default Comments

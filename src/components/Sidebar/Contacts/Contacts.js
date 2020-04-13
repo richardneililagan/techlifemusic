@@ -1,8 +1,8 @@
 // @flow strict
-import React from 'react';
-import { getContactHref, getIcon } from '../../../utils';
-import Icon from '../../Icon';
-import styles from './Contacts.module.scss';
+import React from 'react'
+import { getContactHref, getIcon } from '../../../utils'
+import Icon from '../../Icon'
+import styles from './Contacts.module.scss'
 
 type Props = {
   contacts: {
@@ -11,8 +11,8 @@ type Props = {
 };
 
 const Contacts = ({ contacts }: Props) => (
-  <div className={styles['contacts']}>
-    <ul className={styles['contacts__list']}>
+  <div className={styles.contacts}>
+    <ul className={styles.contacts__list}>
       {Object.keys(contacts).map((name) => (!contacts[name] ? null : (
         <li className={styles['contacts__list-item']} key={name}>
           <a
@@ -27,6 +27,6 @@ const Contacts = ({ contacts }: Props) => (
       )))}
     </ul>
   </div>
-);
+)
 
-export default Contacts;
+export default Contacts

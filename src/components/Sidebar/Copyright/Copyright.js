@@ -8,8 +8,8 @@ type Props = {
 
 const Copyright = ({ copyright }: Props) => (
   <>
-    <div className={styles['copyright']}>{copyright}</div>
-    <cite className={styles['attribution']}>
+    <div className={styles.copyright}>{copyright}</div>
+    <cite className={styles.attribution}>
       Site theme was adapted from&nbsp;
       <a
         href='https://github.com/alxshelepenok/gatsby-starter-lumen'

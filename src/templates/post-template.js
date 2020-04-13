@@ -8,7 +8,7 @@ import type { MarkdownRemark } from '../types'
 
 type Props = {
   data: {
-    markdownRemark: MarkdownRemark
+    mdx: MarkdownRemark
   }
 }
 

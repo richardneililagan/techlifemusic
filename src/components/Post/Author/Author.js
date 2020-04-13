@@ -8,9 +8,9 @@ const Author = () => {
   const { author } = useSiteMetadata()
 
   return (
-    <cite className={styles['author']}>
+    <cite className={styles.author}>
       <header>{author.name}</header>
-      <p className={styles['author__bio']}>
+      <p className={styles.author__bio}>
         {author.bio}
         <span>
           <a

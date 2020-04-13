@@ -16,7 +16,7 @@
 
   &__home-button {
     display: block;
-    background-color: rgba(white, 0.7);
+    background-color: rgba(#ffffff, 0.7);
     max-width: 90px;
     height: $button-height;
     padding: 0 24px;
@@ -40,7 +40,7 @@
       color: $color-primary;
       border-color: $color-primary;
       box-shadow: 2px 2px 0 0 $color-primary;
-      background-color: rgba(white, 1);
+      background-color: rgba(#ffffff, 1);
     }
   }
 }

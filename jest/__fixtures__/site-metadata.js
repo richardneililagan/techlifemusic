@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   site: {
@@ -38,4 +38,4 @@ module.exports = {
       }
     }
   }
-};
+}

@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   pageContext: {
@@ -10,4 +10,4 @@ module.exports = {
     hasNextPage: true,
     hasPrevPage: true
   }
-};
+}

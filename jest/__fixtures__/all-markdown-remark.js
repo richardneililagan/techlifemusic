@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   allMarkdownRemark: {
@@ -43,4 +43,4 @@ module.exports = {
       }
     ]
   }
-};
+}
