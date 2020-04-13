@@ -53,6 +53,15 @@
       @include padding(1, 1, 0.5);
     }
 
+    & li {
+      padding-left: 2em;
+
+      &::marker {
+        color: $color-primary;
+        font-family: $typographic-secondary-font-family;
+      }
+    }
+
     // :: quotations ---
     & blockquote {
       font-style: italic;
