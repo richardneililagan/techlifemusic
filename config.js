@@ -6,7 +6,7 @@ module.exports = {
   title: 'Tech + Life + Music',
   subtitle: '',
   copyright: '© All rights reserved.',
-  disqusShortname: '',
+  disqusShortname: 'techlifemusic',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-10342511-3',
   useKatex: true,
