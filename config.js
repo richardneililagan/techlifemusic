@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://www.richardneililagan.com',
   pathPrefix: '/',
-  title: 'Tech + Life + Music',
+  title: 'tech, life & music.',
   subtitle: '',
   copyright: '© All rights reserved.',
   disqusShortname: 'techlifemusic',
