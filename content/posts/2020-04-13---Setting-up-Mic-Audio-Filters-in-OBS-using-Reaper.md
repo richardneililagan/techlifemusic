@@ -11,7 +11,9 @@ socialImage: ''
 template: 'post'
 draft: false
 tags:
-  - 'Draft'
+  - 'OBS'
+  - 'Reaper'
+  - 'Livestreaming'
 ---
 
 In this time of global pandemic, not only are there more people jumping onto remote online meetings,
@@ -25,7 +27,7 @@ If you're using [Open Broadcaster Software (OBS)][1] to record, I'd like to shar
 to help ensure your voice sounds cleaner, crisper, and much more professional.
 
 <aside>
-<strong>Before all that though</strong>,
+<strong>Before all that though,</strong>,
 
 Admittedly, I'm definitely no audio engineer.
 I've looked into setting up a livestreaming setup a few years back for my own video games, and this is the equivalent of me
