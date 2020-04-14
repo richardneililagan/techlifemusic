@@ -7,7 +7,7 @@ description: >
   here are a few simple steps to make sure your microphone audio sounds much more professional.
 date: 2020-04-13
 category: 'Audio Engineering'
-socialImage: '/media/20200413/socialimage.png'
+socialImage: '/media/20200413/socialimage.jpg'
 template: 'post'
 draft: false
 tags:
