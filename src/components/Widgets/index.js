@@ -1,7 +1,9 @@
 import FigureImage from './FigureImage/FigureImage'
 import Quotation from './Quotation/Quotation'
+import ExternalLink from './ExternalLink/ExternalLink'
 
 export default {
-  FigureImage: FigureImage,
-  Quotation: Quotation
+  FigureImage,
+  Quotation,
+  a: ExternalLink
 }

@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = {
-  url: 'https://richardneililagan.com',
+  url: 'https://www.richardneililagan.com',
   pathPrefix: '/',
   title: 'Tech + Life + Music',
   subtitle: '',
