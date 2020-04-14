@@ -51,6 +51,7 @@
     "gatsby-plugin-feed-mdx": "1.0.1",
     "gatsby-plugin-flow": "^1.2.1",
     "gatsby-plugin-google-gtag": "^1.2.1",
+    "gatsby-plugin-gtag": "1.0.13",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-mdx": "1.1.6",
     "gatsby-plugin-offline": "^3.1.2",

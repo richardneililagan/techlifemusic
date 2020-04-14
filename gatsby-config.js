@@ -1,5 +1,4 @@
 'use strict'
-
 const siteConfig = require('./config.js')
 const postCssPlugins = require('./postcss-config.js')
 
@@ -15,6 +14,12 @@ module.exports = {
     author: siteConfig.author
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-google-gtag',
+      options: {
+        trackingIds: [siteConfig.googleAnalyticsId]
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -139,15 +144,6 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-plugin-google-gtag',
-      options: {
-        trackingIds: [siteConfig.googleAnalyticsId],
-        pluginConfig: {
-          head: true
-        }
-      }
-    },
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
