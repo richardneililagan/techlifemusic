@@ -5,13 +5,14 @@ const postCssPlugins = require('./postcss-config.js')
 module.exports = {
   pathPrefix: siteConfig.pathPrefix,
   siteMetadata: {
-    url: siteConfig.url,
-    title: siteConfig.title,
-    subtitle: siteConfig.subtitle,
-    copyright: siteConfig.copyright,
-    disqusShortname: siteConfig.disqusShortname,
-    menu: siteConfig.menu,
-    author: siteConfig.author
+    ...siteConfig
+    // url: siteConfig.url,
+    // title: siteConfig.title,
+    // subtitle: siteConfig.subtitle,
+    // copyright: siteConfig.copyright,
+    // disqusShortname: siteConfig.disqusShortname,
+    // menu: siteConfig.menu,
+    // author: siteConfig.author
   },
   plugins: [
     {
