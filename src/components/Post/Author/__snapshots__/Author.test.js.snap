@@ -1,24 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Author renders correctly 1`] = `
-<div
+<cite
   className="author"
 >
+  <header>
+    Test name
+  </header>
   <p
     className="author__bio"
   >
     Test bio
-    <a
-      className="author__bio-twitter"
-      href="https://www.twitter.com/#"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <strong>
-        Test name
-      </strong>
-       on Twitter
-    </a>
+    <span>
+      <a
+        className="author__bio-twitter"
+        href="https://www.twitter.com/#"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Twitter
+      </a>
+       · 
+      <a
+        className="author__bio-github"
+        href="https://www.twitter.com/#"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Github
+      </a>
+       · 
+      <a
+        className="author__bio-linkedin"
+        href="https://www.twitter.com/undefined"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        LinkedIn
+      </a>
+    </span>
   </p>
-</div>
+</cite>
 `;

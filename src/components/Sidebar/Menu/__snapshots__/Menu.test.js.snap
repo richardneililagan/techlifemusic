@@ -27,6 +27,16 @@ exports[`Menu renders correctly 1`] = `
         Item 1
       </a>
     </li>
+    <li
+      className="menu__list-item"
+    >
+      <a
+        className="menu__list-item-link"
+        href="mailto:me@richardneililagan.com"
+      >
+        Contact
+      </a>
+    </li>
   </ul>
 </nav>
 `;

@@ -76,6 +76,16 @@ exports[`CategoriesListTemplate renders correctly 1`] = `
               Test label 3
             </a>
           </li>
+          <li
+            className="menu__list-item"
+          >
+            <a
+              className="menu__list-item-link"
+              href="mailto:me@richardneililagan.com"
+            >
+              Contact
+            </a>
+          </li>
         </ul>
       </nav>
       <div
@@ -223,6 +233,43 @@ exports[`CategoriesListTemplate renders correctly 1`] = `
       >
         Test copyright
       </div>
+      <cite
+        className="attribution"
+      >
+        Site theme was adapted from 
+        <a
+          href="https://github.com/alxshelepenok/gatsby-starter-lumen"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Lumen
+        </a>
+         
+        by 
+        <a
+          href="https://github.com/alxshelepenok"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Alexander Shelepenok
+        </a>
+        . Powered by 
+        <a
+          href="https://gatsbyjs.org"
+          rel="noopener noreferrer"
+        >
+          Gatsby
+        </a>
+         on 
+        <a
+          href="https://aws.amazon.com/amplify/console"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          AWS Amplify
+        </a>
+        .
+      </cite>
     </div>
   </div>
   <div
