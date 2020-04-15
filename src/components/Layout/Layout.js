@@ -39,6 +39,7 @@ const Layout = ({ children, title, description, socialImage }: Props) => {
         <meta name='twitter:title' content={title} />
         <meta name='twitter:description' content={description} />
         <meta name='twitter:image' content={metaImageUrl} />
+        <meta name='twitter:site' content={`@${author.contacts.twitter}`} />
       </Helmet>
       <MDXProvider components={components}>{children}</MDXProvider>
     </div>
