@@ -54,11 +54,20 @@
     }
 
     & li {
-      padding-left: 2em;
+      padding-left: 0.4em;
+      font-family: $typographic-secondary-font-family;
 
       &::marker {
         color: $color-primary;
         font-family: $typographic-secondary-font-family;
+      }
+
+      & ul {
+        margin-top: 0.8em;
+        list-style: circle;
+        font-size: 0.9em;
+        padding-left: 1em;
+        line-height: 1;
       }
     }
 
@@ -131,6 +140,12 @@
       }
     }
 
+    h4,
+    h5,
+    h6 {
+      font-family: $typographic-secondary-font-family;
+    }
+
     & a {
       text-decoration: none;
 
@@ -153,12 +168,32 @@
 
     // :: table of contents ---
 
-    & > ul:first-child {
+    & > ul:first-child,
+    & > ul[class~='toc'] {
       color: $color-secondary;
       padding-top: 1rem;
       padding-bottom: 0.6rem;
       border-bottom: 1px solid $color-gray-bg;
       border-top: 1px solid $color-gray-bg;
+
+      list-style-type: '\2014';
+
+      &::before {
+        content: attr(aria-label);
+        display: block;
+
+        font-weight: 700;
+        margin-bottom: 0.8em;
+        margin-left: -0.8em;
+      }
+
+      & li::marker {
+        color: $color-secondary !important;
+      }
+      
+      & a {
+        margin-left: 0.6em;
+      }
     }
 
     // :: code blocks ---
