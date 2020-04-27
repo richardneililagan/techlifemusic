@@ -8,7 +8,7 @@ description: >
   while keeping our costs low.
 date: 2020-04-26
 category: 'gaming'
-socialImage: ''
+socialImage: '/media/20200426/socialimage.png'
 template: 'post'
 draft: false
 tags:
@@ -29,6 +29,9 @@ while another (local) machine played the games on it works just as well as descr
 
 So here we are. I thought I'd share how I did my setup on [AWS][aws], as well as throw in some recommendations
 on how to maximize your fun, while minimizing your costs as you do it.
+
+If you wanna skip all the auxiliary details and go straight to the build,
+just click any of these links to jump straight to it.
 
 <TOC links={[
 ['Create a Windows-based EC2 instance', '#create-a-windows-based-ec2-instance'],
@@ -57,6 +60,41 @@ src='/media/20200426/parsec-architecture.png'
 alt='Parsec architecture on AWS'>
 How Parsec works
 </FigureImage>
+
+## Costs
+
+I opted for a Windows-based `g4dn.xlarge` EC2 instance in the AWS Hong Kong region.
+As a spot instance, it's currently costing me **USD 0.427** per hour it's turned on,
+which is about a 55% discount on the on-demand price.
+Since this is only turned on when I'm actually playing, that's not a bad deal at all.
+
+Your Parsec server will also need storage --- I opted to stick with the General Purpose SSDs.
+This **will** cost you even when the server is turned off, so keep this in mind.
+You will need enough storage to install the games you want to play, but you can always
+install / uninstall games over time to minimize this.
+In the AWS HK region, I'm getting this at about **USD 0.132** per GB per month.
+
+There are also networking costs involved (since Parsec is streaming your game video out),
+but I haven't metered and done the math there yet.
+
+So assuming I'm playing an hour every day for a month, with a 100 GB machine,
+my playtime is coming up to around **USD 0.867** for every hour of play.
+
+Not bad.
+
+## But will it run Crysis?
+
+Of course, as is with any gaming rig, it _has_ to run [Crysis][crysis], right?
+No way was I not gonna try that out.
+
+<ReactPlayer url='https://youtu.be/mnVfDD4n_MM' />
+
+This Parsec host was running from the AWS Hong Kong region, and was being streamed to a local laptop
+here in the Philippines, with a reported ping of around 60-80 ms.
+Assuming we're hitting 60 FPS, that comes to around being 4-5 frames behind (probably double that,
+since our control input has to go back round to the host server too).
+Even at that level of lag, though, the game was pretty much playable, and the graphics, while
+not the best, was extremely better than I expected.
 
 ---
 
@@ -348,6 +386,36 @@ To ensure it can never be used again (remember: this has Administrator permissio
 you can either delete the IAM user itself, or revoke the access credentials you've given it
 in IAM.
 
+---
+
+## Outcome
+
+Your latency will greatly depend on which AWS region you set up your machine,
+and where you're playing from. I set up Parsec hosts in the Singapore, Tokyo, and Hong Kong regions
+in AWS, with best results streaming to the Philippines from Hong Kong.
+
+It also seems like the lag differs from game to game as well, even if the network latency is the same.
+I found that the gameplay experience of, for example, Crysis 2 and Witcher 3 were really good,
+but Borderlands 3 was very difficult to play --- even if the latency across all three games were the same.
+
+Here are some more sample videos:
+
+### Dota 2
+
+<ReactPlayer url='https://youtu.be/J7Z5p1Rtq_s' />
+
+### Witcher 3
+
+<ReactPlayer url='https://youtu.be/qiFBnUbrkkY' />
+
+### Borderlands 3
+
+<ReactPlayer url='https://youtu.be/_FirBl5_Tn8' />
+
+### Subnautica
+
+<ReactPlayer url='https://youtu.be/gRb7tqMiT5g' />
+
 [parsec]: https://parsecgaming.com
 [aws]: https://aws.amazon.com
 [remote-desktop]: https://en.wikipedia.org/wiki/Remote_Desktop_Protocol
@@ -358,3 +426,4 @@ in IAM.
 [ec2-dashboard]: https://console.aws.amazon.com/ec2
 [iam-dashboard]: https://console.aws.amazon.com/iam
 [parsec-script]: https://github.com/jamesstringerparsec/Parsec-Cloud-Preparation-Tool
+[crysis]: https://en.wikipedia.org/wiki/Crysis_2
