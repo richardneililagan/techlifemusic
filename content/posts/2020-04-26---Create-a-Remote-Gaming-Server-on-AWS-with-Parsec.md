@@ -87,7 +87,7 @@ Not bad.
 Of course, as is with any gaming rig, it _has_ to run [Crysis][crysis], right?
 No way was I not gonna try that out.
 
-<ReactPlayer url='https://youtu.be/mnVfDD4n_MM' />
+<VideoPlayer src='https://youtu.be/mnVfDD4n_MM' />
 
 This Parsec host was running from the AWS Hong Kong region, and was being streamed to a local laptop
 here in the Philippines, with a reported ping of around 60-80 ms.
@@ -402,19 +402,19 @@ Here are some more sample videos:
 
 ### Dota 2
 
-<ReactPlayer url='https://youtu.be/J7Z5p1Rtq_s' />
+<VideoPlayer src='https://youtu.be/J7Z5p1Rtq_s' />
 
 ### Witcher 3
 
-<ReactPlayer url='https://youtu.be/qiFBnUbrkkY' />
+<VideoPlayer src='https://www.youtube.com/embed/qiFBnUbrkkY' />
 
 ### Borderlands 3
 
-<ReactPlayer url='https://youtu.be/_FirBl5_Tn8' />
+<VideoPlayer src='https://youtu.be/_FirBl5_Tn8' />
 
 ### Subnautica
 
-<ReactPlayer url='https://youtu.be/gRb7tqMiT5g' />
+<VideoPlayer src='https://youtu.be/gRb7tqMiT5g' />
 
 [parsec]: https://parsecgaming.com
 [aws]: https://aws.amazon.com
