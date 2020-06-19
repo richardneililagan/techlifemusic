@@ -9,7 +9,7 @@ description: >
 
 date: 2020-06-19
 category: 'applications development'
-socialImage: '/media/2020/0619/socialimage.png'
+socialImage: '/media/20200619/socialimage.png'
 template: 'post'
 draft: false
 tags:
