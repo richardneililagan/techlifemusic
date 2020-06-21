@@ -91,7 +91,7 @@ will need to present attendee information that was explicitly generated for them
  * @returns {ChimeMeetingAttendee}
  */
 async function createChimeAttendee(meetingInstance) {
-  const { MeetingId } = meetingSession.meeting
+  const { MeetingId } = meetingInstance.meeting
   const params = {
     MeetingId,
     ExternalUserId: 'unique-user-identifier'
