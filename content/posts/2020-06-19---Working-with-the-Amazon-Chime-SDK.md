@@ -141,7 +141,7 @@ Once you have both a meeting instance (which can be shared across all attendees)
 and an attendee ticket (which is unique to every attendee),
 you can then use the Chime SDK to complete the connection.
 
-```javascript
+```javascript{21-25,30}
 import {
   ConsoleLogger,
   DefaultDeviceController,
