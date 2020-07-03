@@ -165,5 +165,8 @@ figcaption {
   .float-left {
     float: left;
   }
+}
 
+pre, code {
+  font-family: $typographic-mono-font-family;
 }

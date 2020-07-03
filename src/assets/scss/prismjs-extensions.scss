@@ -1,11 +1,13 @@
+@import '../scss/_variables.scss';
+
 .gatsby-highlight-code-line {
-  background-color: rgba(black, 0.26);
+  background-color: rgba(black, 0.14);
   display: block;
   margin-right: -1em !important;
-  margin-left: -1em !important;
+  margin-left: -1.125em !important;
   padding-right: 1em !important;
-  padding-left: 0.75em !important;
-  border-left: 0.25em solid #f99;
+  padding-left: 0.925em !important;
+  border-left: 0.2em solid #f99;
 
   // :: fixes code highlighting scrolling
   max-width: unset !important;
@@ -26,7 +28,19 @@
     overflow: initial;
     float: left; /* 1 */
     min-width: 100%; /* 2 */
+    font-size: 16px;
 
     // max-width: unset !important;
   }
+}
+
+:not(pre) > code[class*="language-"] {
+  background: rgba(#97a7b3, 0.26);
+  color: rgba(black, 0.54);
+  border-radius: 0;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: $typographic-mono-font-family;
 }

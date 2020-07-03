@@ -21,11 +21,13 @@ $typographic-secondary-font-family: 'Lato', -apple-system, BlinkMacSystemFont,
   'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
   sans-serif;
 
+$typographic-mono-font-family: 'Fira Code', 'Roboto Mono', monospace;
+
 $typographic-root-font-size: 100;
 $typographic-base-font-size: 16px;
-$typographic-small-font-size: 14px;
+$typographic-small-font-size: 12px;
 
-$typographic-base-line-height: 1.625;
+$typographic-base-line-height: 1.6;
 
 $typographic-base-font-color: $color-base;
 $typographic-link-p-font-color: $color-primary;
