@@ -7,7 +7,7 @@ module.exports = {
   subtitle: '',
   copyright: '© All rights reserved.',
   disqusShortname: 'techlifemusic',
-  postsPerPage: 4,
+  postsPerPage: 8,
   googleAnalyticsId: 'UA-10342511-3',
   useKatex: true,
   menu: [
