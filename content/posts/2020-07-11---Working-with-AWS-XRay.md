@@ -262,8 +262,8 @@ introducing some errors into the stack, and see how that will affect our map.
 
 I'll change some of the Lambda handlers so that:
 
-- one of them takes a much longer time to respond,
-- one of them generates an `HTTP 4xx` error half of the time, and
+- one of them takes a much longer time to respond, and
+- one of them generates an `HTTP 4xx` error half of the time
 
 We have a total of 50 handler functions here, and just having to fish out two faulty
 ones without tracing tooling is a pretty tedious effort --- imagine if we had hundreds
