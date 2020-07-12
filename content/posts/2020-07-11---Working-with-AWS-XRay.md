@@ -302,8 +302,7 @@ Then we'll adjust `src/handlers/functions.js` to take the faulty handlers into a
 const createHandler = (type, i) => {
   const isFaulty =
     (type === 'adjective' && i === 4) ||
-    (type === 'verb' && i === 6) ||
-    (type === 'noun' && i === 9)
+    (type === 'verb' && i === 6)
 
   const handler = isFaulty ?
     `src/handlers/${type}.faultyHandler` ||
